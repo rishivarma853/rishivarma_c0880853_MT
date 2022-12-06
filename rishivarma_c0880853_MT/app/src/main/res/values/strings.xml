@@ -1,3 +1,16 @@
 <resources>
-    <string name="app_name">rishivarma_c0880853_MT</string>
+    <string name="app_name">zzMT</string>
+    <string-array name="carsstringarray">
+        <item>Please Choose your car here</item>
+        <item>Nissan Sentra (2022)</item>
+        <item>Nissan Rogue Sport (2022)</item>
+        <item>Subaru Forester Wilderness (2022)</item>
+        <item>Toyota Prius (2022)</item>
+        <item>Honda Accord Hybrid (2021)</item>
+        <item>Toyota RAV4 Prime (2021)</item>
+        <item>Kia Telluride (2022)</item>
+        <item>Honda Ridgeline (2021)</item>
+        <item>Lexus RX450H (2021)</item>
+        <item>Ford Mustang Mach-E (2021)</item>
+    </string-array>
 </resources>
