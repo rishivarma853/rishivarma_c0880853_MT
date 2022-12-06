@@ -21,8 +21,13 @@ public class MainActivity2 extends AppCompatActivity {
         uiAmountLabel = findViewById(R.id.txtvw_amount);
 
         uiCarLabel.setText(getIntent().getStringExtra("Car"));
-        uiDaysLabel.setText(getIntent().getIntExtra("Days",0));
-        uiAgeLabel.setText(getIntent().getIntExtra("AgeIndex",0));
-        uiAmountLabel.setText(String.valueOf(getIntent().getDoubleExtra("Amount",0)));
+        uiDaysLabel.setText(String.valueOf(getIntent().getIntExtra("Days",0)));
+        int index = getIntent().getIntExtra("AgeIndex",0);
+        uiAgeLabel.setText(((index==1)?"Less Than 20":((index==3)?"Greater Than 60":"Between 21-60")));
+        String options = (getIntent().getBooleanExtra("GPS",false)?" GPS ":"");
+        options += (getIntent().getBooleanExtra("ChildSeat",false)?" ChildSeat ":"");
+        options += (getIntent().getBooleanExtra("UnlimitedMileage",false)?" Unlimited Mileage ":"");
+        uiOptionsLabel.setText(options);
+        uiAmountLabel.setText(String.format("%.2f",getIntent().getDoubleExtra("TotalAmount",0)));
     }
 }

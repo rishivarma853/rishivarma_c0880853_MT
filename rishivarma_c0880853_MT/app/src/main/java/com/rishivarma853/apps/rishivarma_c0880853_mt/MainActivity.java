@@ -153,7 +153,7 @@ public class MainActivity extends AppCompatActivity {
             intent.putExtra("TotalAmount",total);
 
             startActivity(intent);
-            
+
         });
 
     }

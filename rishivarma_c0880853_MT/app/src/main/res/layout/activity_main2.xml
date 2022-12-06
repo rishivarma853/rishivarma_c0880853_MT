@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="horizontal"
-    android:gravity="center"
+    android:gravity="center_vertical"
     tools:context=".MainActivity2">
 
     <LinearLayout
@@ -59,48 +59,49 @@
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
+        android:gravity="center_vertical"
         android:orientation="vertical"
-        android:gravity="center_vertical">
+        android:layout_weight="1">
 
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
             android:id="@+id/txtvw_car"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
             android:text="Car : "
-            android:layout_margin="20dp"
-            android:textSize="20sp"/>
+            android:textSize="20sp" />
 
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
             android:id="@+id/txtvw_days"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
             android:text="Days : "
-            android:layout_margin="20dp"
-            android:textSize="20sp"/>
+            android:textSize="20sp" />
 
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
             android:id="@+id/txtvw_age"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
             android:text="Age : "
-            android:layout_margin="20dp"
-            android:textSize="20sp"/>
+            android:textSize="20sp" />
 
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
             android:id="@+id/txtvw_options"
-            android:text="Options : "
-            android:layout_margin="20dp"
-            android:textSize="20sp"/>
-
-        <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/txtvw_amount"
-            android:text="Total Amount : "
             android:layout_margin="20dp"
-            android:textSize="20sp"/>
+            android:text="Options : "
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/txtvw_amount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:text="Total Amount : "
+            android:textSize="20sp" />
 
     </LinearLayout>
 
